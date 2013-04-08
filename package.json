@@ -1,0 +1,23 @@
+{
+  "name": "couchdb_toQuery",
+  "version": "0.0.2",
+  "description": "Convert an object to a correctly formatted query for CouchDB",
+  "main": "toquery.js",
+  "dependencies": {
+    "lodash": "~1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmarca/couchdb_toQuery"
+  },
+  "keywords": [
+    "CouchDB",
+    "querystring"
+  ],
+  "author": "James E. Marca",
+  "license": "BSD"
+}
