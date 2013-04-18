@@ -3,7 +3,7 @@ var _ = require('lodash')
 var querystring = require('querystring')
 // make sure that strings are strings, numbers are numbers when JSON encoding
 function brutal_hack(v){
-    if(! isNaN(v) ){
+    if(! _.isString(v) && ! isNaN(v) ){
         return +v;
     }else{
         return v;
