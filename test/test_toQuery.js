@@ -11,3 +11,11 @@ describe('string parsing with numbers',function(){
         done()
     })
 })
+describe('parse an object okay',function(){
+    it('should not turn 0 into a string',function(done){
+        var parsed = tq({limit:200
+                        ,startkey:0})
+        parsed.should.eql('limit=200&startkey=0')
+        done()
+    })
+})
