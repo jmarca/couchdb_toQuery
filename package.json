@@ -4,7 +4,7 @@
   "description": "Convert an object to a correctly formatted query for CouchDB",
   "main": "toquery.js",
   "dependencies": {
-    "lodash": "~1.0.1"
+    "lodash": ""
   },
   "devDependencies": {
     "should": "^3.1.2"
