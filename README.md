@@ -1,5 +1,7 @@
 # CouchDB toQuery
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jmarca/couchdb_toQuery.svg)](https://greenkeeper.io/)
+
 Tiny little utility that I use a lot to convert query objects into
 proper CouchDB query strings.  The deal is that you have to pass key,
 startkey, and endkey parameters as JSON, while everything else needs
