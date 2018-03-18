@@ -1,6 +1,6 @@
 {
   "name": "couchdb_toQuery",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert an object to a correctly formatted query for CouchDB",
   "main": "toquery.js",
   "dependencies": {
