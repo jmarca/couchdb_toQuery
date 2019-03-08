@@ -1,6 +1,7 @@
 # CouchDB toQuery
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/jmarca/couchdb_toQuery.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/jmarca/couchdb_toQuery.svg?branch=master)](https://travis-ci.org/jmarca/couchdb_toQuery)
 
 Tiny little utility that I use a lot to convert query objects into
 proper CouchDB query strings.  The deal is that you have to pass key,
