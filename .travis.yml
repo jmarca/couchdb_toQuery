@@ -1,0 +1,23 @@
+# Sample .travis.yml for R projects from https://github.com/craigcitro/r-travis
+
+language: node_js
+node_js:
+  - "node"
+  - "7"
+
+
+
+env:
+
+addons:
+  code_climate:
+    repo_token: d7647668fe8eb1da34633b937e6e168652d7d1ad1d727601981eea12bf4edb1d
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+after_success:
+  - npm install codeclimate-test-reporter
+  - ./node_modules/.bin/tap --coverage-report=text-lcov | ./node_modules/.bin/codeclimate-test-reporter
