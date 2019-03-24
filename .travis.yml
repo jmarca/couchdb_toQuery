@@ -8,16 +8,18 @@ node_js:
 
 
 env:
+  global:
+    - CC_TEST_REPORTER_ID=7ae20dd79ca6288ca22a0041ee98bf6153a215aabb224b64a9499760d559a981
 
-addons:
-  code_climate:
-    repo_token: 7ae20dd79ca6288ca22a0041ee98bf6153a215aabb224b64a9499760d559a981
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 
 notifications:
   email:
     on_success: change
     on_failure: change
 
-after_success:
-  - npm install codeclimate-test-reporter
-  - ./node_modules/.bin/tap --coverage-report=text-lcov | ./node_modules/.bin/codeclimate-test-reporter
+after_script:
+  - ./node_modules/.bin/tap --coverage-report=lcov &&  ./cc-test-reporter after-build  -t lcov --exit-code $TRAVIS_TEST_RESULT
