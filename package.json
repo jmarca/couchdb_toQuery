@@ -6,7 +6,7 @@
   "dependencies": {
     "lodash.foreach": "^4.5.0",
     "lodash.isstring": "^4.0.1",
-    "tap": "^14.2.1"
+    "tap": "^14.2.2"
   },
   "devDependencies": {},
   "scripts": {
