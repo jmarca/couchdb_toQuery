@@ -8,7 +8,7 @@
     "lodash.isstring": "^4.0.1"
   },
   "devDependencies": {
-    "tap": "^14.10.7"
+    "tap": "^18.5.1"
   },
   "scripts": {
     "test": "tap test/**/test*.js --cov",
